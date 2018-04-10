@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp_ver2.MainActivity3">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:fontFamily="monospace"
+                    android:paddingTop="18dp"
+                    android:text="3/3"
+                    android:textSize="17sp" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="60dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:maxHeight="40dp"
+                    android:maxWidth="10dp"
+                    android:minHeight="35dp"
+                    android:minWidth="10dp"
+                    android:paddingTop="13dp"
+                    android:progress="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="vertical"
+                android:paddingTop="65dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="13dp"
+                    android:text="6. Please provide comments or feedback about any aspect of this kickoff event."
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/answer_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="monospace"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="13dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="35dp"
+                android:layout_marginLeft="150dp"
+                android:fontFamily="casual"
+                android:onClick="done"
+                android:text="Done"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

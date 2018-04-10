@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp_ver2.MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+
+            <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="15dp"
+                    android:text="2018 Global Sales Kickoff: \nEVENT FEEDBACK"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/name_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="monospace"
+                    android:hint="1. Name (Optional)"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="13dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="13dp"
+                    android:text="2. Job Role / Responsibility"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="13sp" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+
+                    <RadioButton
+                        android:id="@+id/sales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:onClick="onRadioButtonClickedonQuiz2"
+                        android:text="@string/sales"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/non_quota_sales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:onClick="onRadioButtonClickedonQuiz2"
+                        android:text="@string/non_quota_sales"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/non_sales"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:onClick="onRadioButtonClickedonQuiz2"
+                        android:text="@string/non_sales"
+                        android:textSize="12sp" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="13dp"
+                    android:paddingTop="8dp"
+                    android:text="3. Region"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="13sp" />
+
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp">
+
+                    <RadioButton
+                        android:id="@+id/americas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:onClick="onRadioButtonClickedonQuiz3"
+                        android:text="@string/americas"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/europe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:onClick="onRadioButtonClickedonQuiz3"
+                        android:text="@string/europe"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/asia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:onClick="onRadioButtonClickedonQuiz3"
+                        android:text="@string/asia"
+                        android:textSize="12sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/nextPageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="150dp"
+                android:fontFamily="casual"
+                android:onClick="nextPage"
+                android:text="Next"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
